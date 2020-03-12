@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Notes app</title>
+</head>
+<body>
+<div id="app">
+    <h2>Things to do</h2>
+    <div id="addNotesForm">
+        <form class="add-note">
+            <input class="newTask" type="text" placeholder="Enter a new task">
+            <input class="newDate" type="text" placeholder="Due Date" data-dd-large="true">
+                <button class="btn" id="add-icon" type="submit">Add task </button>
+        </form>
+        <button class="btn" id="clearAllBtn">Clear all</button>
+    </div>
+</div>
+    <div id="notes"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/datedropper.pro.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script src="js/NoteClass.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

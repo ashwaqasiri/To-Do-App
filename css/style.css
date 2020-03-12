@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'helvetica neue arial';
+}
+
+html{
+    background-color: #f1f1f1;
+    background-image: -webkit-linear-gradient(65deg,#7d66d9fa 50%, #f1f1f1 50%);
+    min-height: 1000px;
+}
+
+body {
+    font-size: 100%;
+    margin: 1em;   
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+#app{
+    max-width: 500px;
+    margin: auto;
+    background: #7d66d9fa;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+#addNotesForm {
+    text-align: center;
+    display: inline;
+}
+
+#addNotesForm .newTask , .newDate {
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    margin: 20px ;
+    background: rgba(255,255,255,.7);
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 50px;  
+}
+
+#add-icon{
+float: left;
+}
+
+.btn {
+    -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+    box-shadow: inset 0px 1px 3px 0px #333131;
+    /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6)); */
+    background: -moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+    background: -webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+    background: -o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+    background: -ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+    background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6', GradientType=0);
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border: 0;
+    border-radius: 6px;
+    display: inline-block;
+    cursor: pointer;
+    padding: 6px 24px;
+    margin: 20px 30px;
+    width: 180px;
+    height: 40px;
+    text-decoration: none;
+    text-shadow: 0px 1px 2px #ffffff;
+    font-weight: bold;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: .8; 
+    transition: all linear .40s;
+    background-color: #fff;
+    color: #00204a;
+}
+
+.btn:hover {
+    /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff)); */
+    background: -moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+    background: -webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+    background: -o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+    background: -ms-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+    background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff', GradientType=0);
+    background-color: #f6f6f6;
+    color: #00204a;
+    opacity: 1;
+}
+
+.btn:active {
+    color: #7d66d9fa;
+    opacity: 1;
+}
+
+.done{
+    width: 80px;
+    height: 30px; 
+}
+
+#notes{
+    max-width: 500px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.item {
+    position: relative;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #F1F1F1;
+}
+
+.strikethrough{
+    margin: 0;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 200;
+    color: #00204a;
+}
+
+.item span{
+    padding-left: 30px;
+    margin: 0;
+    font-size: 15px;
+    color: #7d66d9fa;
+}
+
+i{
+    padding-left: 8px;
+    
+}
+
+input[type=text]{
+    margin: 1em;
+}
+
+input[type=checkbox] {
+    margin-left:1em;
+    cursor: pointer;
+  }
+
+input[type=checkbox]:checked + label.strikethrough{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+
+.icon{
+    position: absolute;
+    right: 10px;
+    color: rgb(175, 170, 170);
+    cursor: pointer;
+}
+
+.fa-edit:hover{
+    color: #1f6dd3;
+}
+
+.fa-trash:hover{
+    color: #e24242;
+}
+
+
